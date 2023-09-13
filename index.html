@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!--atajo ! ó html:5 se despliega etiquetas com html, head, meta...-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Encriptador</title><!--titulo de la pagina-->
+</head>
+<body>
+    <header><!--Etieuta semantica dentro de html, describen el significado del contenido-->
+        <img class="logo" src="/Imagenes/Frame 6.png" alt="logo de alura" class="logo"><!--se agrega la clase y la etiqueta de logo -->
+    </header>
+    <main><!--Es la etiqueta donde se encuentra todo el contenido principal de las paginas -->
+        <section><!--Se encuentra dentro de main comando rápido: sectionx2-->
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea><!--cuadro para que el usuario escriba-->
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button><!--etiqueta button para agregar los botones y onclick hacer click-->
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="20" rows="10"></textarea><!--Aca aparece el mensaje encriptado-->
+            <div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+<script src= "/script.js"></script>
+</body>
+</html>
